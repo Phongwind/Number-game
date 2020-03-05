@@ -43,7 +43,7 @@ body {
 
 #chanceArea {
     position: relative;
-    top: 58%;
+    top: 60%;
     margin-left: 25%;
     color: white;
     font: 50px Maker-notes;
@@ -51,7 +51,7 @@ body {
 
 #timecount {
     position: relative;
-    top: 27%;
+    top: 30%;
     margin-left: 45%;
     color: white;
     font: 50px Maker-notes;
