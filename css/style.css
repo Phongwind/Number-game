@@ -38,7 +38,7 @@ body {
 .direction {
     max-width: 100%;
     bottom: 0;
-    margin-top: 36%;
+    margin-top: 40%;
 }
 
 #chanceArea {
@@ -100,7 +100,7 @@ body {
     margin-bottom: 20%;
     margin-left: 25%;
     color: black;
-    font: 23px Maker-notes;
+    font: 17px Maker-notes;
 }
 
 #resetButton {

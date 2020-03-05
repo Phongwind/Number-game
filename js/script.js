@@ -17,6 +17,7 @@ let history = [];
 let message = '';
 //4 number chance 
 let chance = 3;
+let chanceLimit = chance;
 //4 a show that chance to user.
 chanceArea.innerHTML = `${chance}`;
 
@@ -69,21 +70,37 @@ function guess() {
 
 }
 function resetGame() {
-    let chance = 3;
-    chance = chance - 1;
-    if (chance === 0) {
-        guessButton.disabled = true;
-    }
+    chance = chanceLimit;
     history = [];
     randomNumber = Math.ceil(Math.random() * 100);
-    resultArea.innerHTML = `${message}`;
+    resultArea.innerHTML = ``;
     chanceArea.innerHTML = `${chance}`;
     userHistory.innerHTML = '';
     document.getElementById("userInput").value = '';
     // userNumber = '';
     console.log('New Random Number:', randomNumber);
     document.getElementById("guessButton").disabled = false;
+    time = timeLimit;
+    timeOut();
+    return youlose ();
     
+}
+
+function youlose () {
+    myTime = setInterval(() => {
+        time -= 1;
+        if((chance == 0) || (time == 0)) {
+            timeOut();
+            document.getElementById('timecount').innerHTML = 0;
+            message = "You are lose!!! Please press reset to start again!";
+            resultArea.innerHTML = `${message}`;
+        } else {   
+        document.getElementById('timecount').innerHTML = `${time}`;}
+    }, 1000)// every 1 second, it will add 1 into time variable (computer use millisecond so 1000 is 1 second)
+}
+
+function timeOut() {
+    clearInterval(myTime);
 }
 
 // // function timeOut() {
@@ -95,19 +112,17 @@ function resetGame() {
 // }
 
 let time = 30 // time start from 0
+let timeLimit = time;
     let myTime; // timer will be assign to this variable
     function timecounting() {
         myTime = setInterval(() => {
-            time --;
-            if (time < 0) {
-                clearInterval(myTime);
-                document.getElementById('timecount').innerHTML = 'You lose!!!'
-            }
+            time -= 1;
             document.getElementById('timecount').innerHTML = `${time}`;
         }, 1000)// every 1 second, it will add 1 into time variable (computer use millisecond so 1000 is 1 second)
     }
-
-    timecounting();
+    
+    
+    youlose ();
 
     
 
