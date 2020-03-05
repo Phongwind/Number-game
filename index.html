@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="img-fluid title" src="/img/header.png" />
+        <h1>NUMBER GUESSSING</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="game" class="col-sm-12 col-lg-9">
+                <div class="input">
+                    <img class="img-fluid box" src="/img/input.png">
+                    <input type="number" id="userInput">
+                    <img class="img-fluid box-2" src="/img/input.png">
+                    <div id="resultArea"></div>
+                </div>
+                <img class="img-fluid button-1" src="/img/guess-button.png"/>
+                <button id="guessButton">Guess</button>
+                <img class="img-fluid button-2" src="/img/reset.png"/>
+                <button id="resetButton">Reset</button>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 play">
+                <div id="chanceArea"></div>
+                <div id="timecount"></div>
+                <div id="userHistory"></div>
+                <img class="img-fluid direction" src="/img/direction.png">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

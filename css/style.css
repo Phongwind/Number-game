@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Maker-notes;
+    src: url(/font/Marker\ Notes.otf);
+}
+
+body {
+    background: url(/img/background.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.title {
+    max-width: 80%;
+}
+
+.header > h1 {
+    font: 78px Maker-notes;
+    color: white;
+    margin-top: -8%;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 650px;
+}
+
+.direction {
+    max-width: 100%;
+    bottom: 0;
+    margin-top: 36%;
+}
+
+#chanceArea {
+    position: relative;
+    top: 58%;
+    margin-left: 25%;
+    color: white;
+    font: 50px Maker-notes;
+}
+
+#timecount {
+    position: relative;
+    top: 27%;
+    margin-left: 45%;
+    color: white;
+    font: 50px Maker-notes;
+}
+
+#userHistory {
+    position: relative;
+    color: white;
+    top: 72%;
+    margin-left: 35%;
+    font: 20px Maker-notes;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.box {
+    max-width: 90%;
+    margin-left: 8%;
+    margin-top: -5%;
+}
+
+#userInput {
+    margin-top: -17%;
+    margin-bottom: 20%;
+    margin-right: 18%;
+    margin-left: 21%;
+    border: none;
+    height: 100px;
+    color: black;
+    font: 50px Maker-notes;
+}
+
+.box-2 {
+    max-width: 88%;
+    margin-top: -12%;
+    padding-left: 15%;
+}
+
+#resultArea {
+    margin-top: -12%;
+    margin-bottom: 20%;
+    margin-left: 25%;
+    color: black;
+    font: 23px Maker-notes;
+}
+
+#resetButton {
+    margin-left: -11.7%;
+    margin-top: -7.5%;
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    font: 25px Maker-notes;
+}
+
+.button-2 {
+    max-width: 15%;
+    margin-left: 75%;
+    margin-top: -15%;
+}
+
+.button-1 {
+    max-width: 15%;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+
+#guessButton {
+    margin-left: -11%;
+    /* margin-top: -1.2%; */
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    font: 25px Maker-notes;
+}
